@@ -1,0 +1,29 @@
+{
+  "name": "AwesomePureScript",
+  "description": "An example of purescript-reactnative",
+  "main": "Main.purs",
+  "authors": [
+    "Matthew Doig <dogwith1eye@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "purescript-affjax": "^4.0.0",
+    "purescript-dispatcher-react": "^2.0.0",
+    "purescript-reactnative": "^4.0.0",
+    "purescript-argonaut-codecs": "^3.0.0",
+    "purescript-thermite": "^4.1.0"
+  },
+  "devDependencies": {
+    "purescript-debug": "^3.0.0",
+    "purescript-console": "^3.0.0"
+  }
+}

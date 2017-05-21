@@ -1,0 +1,30 @@
+{
+	"name": "AwesomePureScript",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"postinstall": "./node_modules/.bin/bower cache clean && ./node_modules/.bin/bower install",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"build:ios": "rimraf output && pulp build --include mainsrc/ios --to index.ios.js",
+    "watch:ios": "rimraf output && pulp -w build --include mainsrc/ios --to index.ios.js",
+    "build:android": "pulp build --include mainsrc/android --to index.android.js",
+    "watch:android": "pulp -w build --include mainsrc/android --to index.android.js"
+	},
+	"dependencies": {
+		"pulp": "^11.0.0",
+		"react": "16.0.0-alpha.6",
+		"react-native": "0.44.0"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.3",
+		"babel-preset-react-native": "1.9.2",
+		"bower": "^1.8.0",
+		"jest": "20.0.3",
+		"react-test-renderer": "16.0.0-alpha.6",
+		"rimraf": "^2.6.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
